@@ -1,0 +1,23 @@
+# Front-End
+node_modules/
+dist/
+
+# Java e Maven
+target/
+*.class
+
+# Variáveis e configurações locais
+.env
+.env.*
+!.env.example
+
+# Editores
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
