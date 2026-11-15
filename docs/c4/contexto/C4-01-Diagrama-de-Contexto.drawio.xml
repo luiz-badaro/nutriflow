@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ts5INNzDkb0fkisZDgbO">
+    <mxGraphModel dx="1246" dy="1843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zapdm24rfADPZ43Fg3i_-9" edge="1" parent="1" source="zapdm24rfADPZ43Fg3i_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="zapdm24rfADPZ43Fg3i_-6">
+          <mxGeometry relative="1" x="0.125" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;NutriFlow&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Sistema web de gestão para nutricionistas&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Agenda, Financeiro, Marketing,&lt;/div&gt;&lt;div&gt;Retenção e Inteligência Artificial&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="280" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-7" edge="1" parent="1" source="zapdm24rfADPZ43Fg3i_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="zapdm24rfADPZ43Fg3i_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-10" connectable="0" parent="zapdm24rfADPZ43Fg3i_-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Gerencia o sistema" vertex="1">
+          <mxGeometry relative="1" x="0.0062" y="6" as="geometry">
+            <mxPoint x="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;Nutricionista&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Usuário administrador&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Gerencia agenda, pacientes,&lt;/div&gt;&lt;div&gt;finanças e marketing.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="201" x="319.5" y="-300" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-8" edge="1" parent="1" source="zapdm24rfADPZ43Fg3i_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="zapdm24rfADPZ43Fg3i_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-11" connectable="0" parent="zapdm24rfADPZ43Fg3i_-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Acessa e solicita consultas" vertex="1">
+          <mxGeometry relative="1" x="0.0062" y="-3" as="geometry">
+            <mxPoint x="1" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;Paciente&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Usuário do sistema&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Cria sua conta, consulta&lt;/div&gt;&lt;div&gt;horários e solicita consultas.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="201" x="319.5" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-13" edge="1" parent="1" source="zapdm24rfADPZ43Fg3i_-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="zapdm24rfADPZ43Fg3i_-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;API Gemini&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Serviço externo de&lt;/div&gt;&lt;div&gt;Inteligência Artificial&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Interpreta indicadores e&lt;/div&gt;&lt;div&gt;gera recomendações.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="201" x="820" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Envia indicadores para análise" vertex="1">
+          <mxGeometry height="30" width="180" x="600" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Retorna análises e recomendações" vertex="1">
+          <mxGeometry height="30" width="220" x="580" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="zapdm24rfADPZ43Fg3i_-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#FFFFFF;" value="&lt;code&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px; background-color: rgb(0, 0, 107);&quot;&gt;&amp;nbsp;C4 – Nível 1: Diagrama de Contexto do NutriFlow&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/code&gt;" vertex="1">
+          <mxGeometry height="30" width="560" x="380" y="-390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

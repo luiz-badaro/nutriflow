@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="NYStGisK2NhTQSWTErK2">
+    <mxGraphModel dx="1483" dy="1971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;gradientColor=none;strokeColor=#00CC00;strokeWidth=5;fillColor=#FFFFFF;" value="&lt;div&gt;NutriFlow&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Sistema web de gestão para nutricionistas&lt;/div&gt;" vertex="1">
+          <mxGeometry height="430" width="640" x="90" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-10" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;fillColor=#7EA6E0;strokeColor=#7EA6E0;" target="Qpe7QasBp5K5IJFjvrEZ-7">
+          <mxGeometry relative="1" x="0.1816" as="geometry">
+            <mxPoint x="333" y="80.00000000000006" as="sourcePoint" />
+            <mxPoint x="493" y="80.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;div&gt;Front-End&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Aplicação Web&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Tecnologia: React.js&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Apresenta as telas e permite&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;a interação dos usuários com o sistema.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="200" x="100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-11" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;fillColor=#d5e8d4;strokeColor=#82b366;" target="Qpe7QasBp5K5IJFjvrEZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-12" connectable="0" parent="Qpe7QasBp5K5IJFjvrEZ-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Requisições e respostas HTTP/REST" vertex="1">
+          <mxGeometry relative="1" x="-0.0514" as="geometry">
+            <mxPoint x="-5" y="-37" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-14" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Qpe7QasBp5K5IJFjvrEZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-18" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Qpe7QasBp5K5IJFjvrEZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-23" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeColor=#B9E0A5;" target="Qpe7QasBp5K5IJFjvrEZ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#B9E0A5;strokeColor=#82b366;" value="&lt;div&gt;Back-End&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Aplicação de servidor&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Tecnologias: Java + Spring Boot&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Processa as regras de negócio,&lt;/div&gt;&lt;div&gt;gerencia os dados e disponibiliza&lt;/div&gt;&lt;div&gt;as funcionalidades do sistema.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="210" x="500" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-13" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Qpe7QasBp5K5IJFjvrEZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-15" connectable="0" parent="Qpe7QasBp5K5IJFjvrEZ-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Spring Data JPA / Hibernate&lt;div&gt;SQL/JDBC&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0576" y="-6" as="geometry">
+            <mxPoint x="-6" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-8" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFFF99;strokeColor=#d6b656;" value="&lt;div&gt;Banco de Dados&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MySQL&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Armazena usuários, pacientes,&lt;/div&gt;&lt;div&gt;consultas, receitas, despesas&lt;/div&gt;&lt;div&gt;e informações de marketing.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="190" x="510" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-21" edge="1" parent="1" source="Qpe7QasBp5K5IJFjvrEZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeColor=#C3ABD0;" target="Qpe7QasBp5K5IJFjvrEZ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;div&gt;API Gemini&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Serviço externo de IA&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Interpreta os indicadores&lt;/div&gt;&lt;div&gt;enviados pelo Back-End e&lt;/div&gt;&lt;div&gt;retorna análises e recomendações.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="280" x="1000" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="API Gemini — Requisição e resposta" vertex="1">
+          <mxGeometry height="30" width="230" x="745" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Qpe7QasBp5K5IJFjvrEZ-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#00006B;align=center;verticalAlign=middle;rounded=0;fontSize=17;fontColor=#FFFFFF;" value="C4 – Nível 2: Diagrama de Contêineres do NutriFlow" vertex="1">
+          <mxGeometry height="30" width="440" x="470" y="-120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
