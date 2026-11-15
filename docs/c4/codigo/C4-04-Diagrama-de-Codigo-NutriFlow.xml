@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="nutriflow-code" name="C4-04 Código NutriFlow">
+    <mxGraphModel dx="7326" dy="5847" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2800" pageHeight="3400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=23;align=left;strokeWidth=10;" value="&lt;b&gt;CONTROLLERS&lt;/b&gt;  ·  5 elementos" vertex="1">
+          <mxGeometry height="38" width="1000" x="-2040" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;ConsultaController&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− consultaService: ConsultaService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ solicitarConsulta(consulta: Consulta): ResponseEntity&amp;lt;Consulta&amp;gt;&lt;br&gt;+ listarConsultas(): ResponseEntity&amp;lt;List&amp;lt;Consulta&amp;gt;&amp;gt;&lt;br&gt;+ confirmarConsulta(id: Long): ResponseEntity&amp;lt;Void&amp;gt;&lt;br&gt;+ negarConsulta(id: Long): ResponseEntity&amp;lt;Void&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="197" width="470" x="-490" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;AuthController&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− authService: AuthService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ login(email: String, senha: String): ResponseEntity&amp;lt;String&amp;gt;&lt;br&gt;+ registrar(usuario: Usuario): ResponseEntity&amp;lt;Usuario&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="149" width="470" x="2070" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;FinanceiroController&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− receitaService: ReceitaService&lt;br&gt;− despesaService: DespesaService&lt;br&gt;− relatorioService: RelatorioService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ listarReceitas(): ResponseEntity&amp;lt;List&amp;lt;Receita&amp;gt;&amp;gt;&lt;br&gt;+ cadastrarDespesa(despesa: Despesa): ResponseEntity&amp;lt;Despesa&amp;gt;&lt;br&gt;+ listarDespesas(): ResponseEntity&amp;lt;List&amp;lt;Despesa&amp;gt;&amp;gt;&lt;br&gt;+ consultarResumoMensal(mes: Integer, ano: Integer): ResponseEntity&amp;lt;RelatorioDTO&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239" width="470" x="2600" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=23;align=left;strokeWidth=10;" value="&lt;b&gt;SERVICES&lt;/b&gt;  ·  11 elementos" vertex="1">
+          <mxGeometry height="38" width="1000" x="-2050" y="1272" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;ConsultaService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− consultaRepository: ConsultaRepository&lt;br&gt;− receitaService: ReceitaService&lt;br&gt;− disponibilidadeService: DisponibilidadeService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ solicitarConsulta(): Consulta&lt;br&gt;+ confirmarConsulta(id: Long): void&lt;br&gt;+ negarConsulta(id: Long): void&lt;br&gt;+ listarConsultas(): List&amp;lt;Consulta&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239" width="470" x="-490" y="1401" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;DespesaService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− despesaRepository: DespesaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ cadastrarDespesa(despesa: Despesa): Despesa&lt;br&gt;+ listarDespesas(): List&amp;lt;Despesa&amp;gt;&lt;br&gt;+ gerarParcelas(despesa: Despesa): void&lt;br&gt;+ gerarDespesasRecorrentes(): void&lt;br&gt;+ calcularTotalMensal(mes: Integer, ano: Integer): BigDecimal&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="221" width="470" x="3230" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;DisponibilidadeService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− disponibilidadeRepository: DisponibilidadeRepository&lt;br&gt;− bloqueioAgendaRepository: BloqueioAgendaRepository&lt;br&gt;− consultaRepository: ConsultaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ cadastrarDisponibilidade(disponibilidade: Disponibilidade): Disponibilidade&lt;br&gt;+ listarDisponibilidades(): List&amp;lt;Disponibilidade&amp;gt;&lt;br&gt;+ gerarHorariosDisponiveis(data: LocalDate): List&amp;lt;LocalTime&amp;gt;&lt;br&gt;+ verificarHorarioDisponivel(dataHora: LocalDateTime): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239" width="470" x="-1005" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;MarketingService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− marketingRepository: MarketingRepository&lt;br&gt;− consultaRepository: ConsultaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ registrarInvestimento(investimento: InvestimentoMarketing): InvestimentoMarketing&lt;br&gt;+ listarInvestimentos(): List&amp;lt;InvestimentoMarketing&amp;gt;&lt;br&gt;+ calcularCAC(canal: String): BigDecimal&lt;br&gt;+ calcularROI(canal: String): BigDecimal&lt;br&gt;+ calcularReceitaPorCanal(canal: String): BigDecimal&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="242" width="470" x="860" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;AuthService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− usuarioRepository: UsuarioRepository&lt;br&gt;− passwordEncoder: PasswordEncoder&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ autenticar(email: String, senha: String): String&lt;br&gt;+ cadastrarUsuario(usuario: Usuario): Usuario&lt;br&gt;+ validarCredenciais(email: String, senha: String): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="194" width="470" x="1710" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;UsuarioService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− usuarioRepository: UsuarioRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ buscarUsuario(id: Long): Usuario&lt;br&gt;+ atualizarUsuario(id: Long, usuario: Usuario): Usuario&lt;br&gt;+ alterarSenha(id: Long, senhaAtual: String, novaSenha: String): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="173" width="470" x="2240" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;RetencaoService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− pacienteRepository: PacienteRepository&lt;br&gt;− consultaRepository: ConsultaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ identificarPacientesInativos(dias: Integer): List&amp;lt;Paciente&amp;gt;&lt;br&gt;+ identificarPacientesSemRetorno(): List&amp;lt;Paciente&amp;gt;&lt;br&gt;+ gerarAlertasRetencao(): List&amp;lt;AlertaRetencaoDTO&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="194" width="470" x="850" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-124" edge="1" parent="1" source="29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeWidth=5;strokeColor=light-dark(#7272fe, #ededed);endArrow=blockThin;endFill=1;dashed=1;" target="46ARqnNvDqwbgi04m70t-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;IAService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− relatorioService: RelatorioService&lt;br&gt;− marketingService: MarketingService&lt;br&gt;− geminiClient: GeminiClient&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ analisarIndicadores(): String&lt;br&gt;+ gerarRecomendacoesFinanceiras(): String&lt;br&gt;+ gerarRecomendacoesMarketing(): String&lt;br&gt;+ gerarAnaliseRetencao(): String&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239" width="450" x="2925" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=23;align=left;strokeWidth=10;" value="&lt;b&gt;REPOSITORIES&lt;/b&gt;  ·  8 elementos" vertex="1">
+          <mxGeometry height="38" width="1000" x="-2050" y="1752" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;ConsultaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;Consulta&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;Consulta&amp;gt;&lt;br&gt;+ save(consulta: Consulta): Consulta&lt;br&gt;+ existsByDataHoraAndStatusIn(dataHora: LocalDateTime, status: Collection&amp;lt;StatusConsulta&amp;gt;): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="470" y="1780" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;ReceitaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;Receita&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;Receita&amp;gt;&lt;br&gt;+ save(receita: Receita): Receita&lt;br&gt;+ existsByConsultaId(consultaId: Long): boolean&lt;br&gt;+ findByDataRecebimentoBetween(inicio: LocalDate, fim: LocalDate): List&amp;lt;Receita&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="470" x="600" y="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;DespesaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;Despesa&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;Despesa&amp;gt;&lt;br&gt;+ save(despesa: Despesa): Despesa&lt;br&gt;+ findByDataVencimentoBetween(inicio: LocalDate, fim: LocalDate): List&amp;lt;Despesa&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="470" x="3390" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;DisponibilidadeRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;Disponibilidade&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;Disponibilidade&amp;gt;&lt;br&gt;+ save(disponibilidade: Disponibilidade): Disponibilidade&lt;br&gt;+ findByDiaSemanaAndAtivoTrue(diaSemana: DayOfWeek): List&amp;lt;Disponibilidade&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="470" x="2210" y="1754" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;BloqueioAgendaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;BloqueioAgenda&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;BloqueioAgenda&amp;gt;&lt;br&gt;+ save(bloqueio: BloqueioAgenda): BloqueioAgenda&lt;br&gt;+ findByData(data: LocalDate): List&amp;lt;BloqueioAgenda&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="470" x="-1000" y="1701" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;MarketingRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;InvestimentoMarketing&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;InvestimentoMarketing&amp;gt;&lt;br&gt;+ save(investimento: InvestimentoMarketing): InvestimentoMarketing&lt;br&gt;+ findByCanal(canal: String): List&amp;lt;InvestimentoMarketing&amp;gt;&lt;br&gt;+ findByDataInvestimentoBetween(inicio: LocalDate, fim: LocalDate): List&amp;lt;InvestimentoMarketing&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="470" x="2820" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;PacienteRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;Paciente&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;Paciente&amp;gt;&lt;br&gt;+ save(paciente: Paciente): Paciente&lt;br&gt;+ findByEmail(email: String): Optional&amp;lt;Paciente&amp;gt;&lt;br&gt;+ existsByEmail(email: String): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="470" x="1165" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:12px&quot;&gt;«interface»&lt;/div&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:4px&quot;&gt;UsuarioRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ findById(id: Long): Optional&amp;lt;Usuario&amp;gt;&lt;br&gt;+ findAll(): List&amp;lt;Usuario&amp;gt;&lt;br&gt;+ save(usuario: Usuario): Usuario&lt;br&gt;+ findByEmail(email: String): Optional&amp;lt;Usuario&amp;gt;&lt;br&gt;+ existsByEmail(email: String): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="470" x="1710" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=23;align=left;strokeWidth=10;" value="&lt;b&gt;ENTIDADES&lt;/b&gt;  ·  9 elementos" vertex="1">
+          <mxGeometry height="38" width="1000" x="-2050" y="2289.5" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Paciente&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− nome: String&lt;br&gt;− email: String&lt;br&gt;− telefone: String&lt;br&gt;− idade: Integer&lt;br&gt;− sexo: String&lt;br&gt;− objetivo: String&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getNome(): String&lt;br&gt;+ getEmail(): String&lt;br&gt;+ atualizarDados(): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="323" width="470" x="1130" y="2214" as="geometry" />
+        </mxCell>
+        <mxCell id="43" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Consulta&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− dataHora: LocalDateTime&lt;br&gt;− duracaoMinutos: Integer&lt;br&gt;− status: StatusConsulta&lt;br&gt;− valor: BigDecimal&lt;br&gt;− origem: String&lt;br&gt;− paciente: Paciente&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getStatus(): StatusConsulta&lt;br&gt;+ confirmar(): void&lt;br&gt;+ negar(): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="323" width="470" x="-30" y="2214" as="geometry" />
+        </mxCell>
+        <mxCell id="44" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Receita&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− descricao: String&lt;br&gt;− valor: BigDecimal&lt;br&gt;− dataRecebimento: LocalDate&lt;br&gt;− consulta: Consulta&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getValor(): BigDecimal&lt;br&gt;+ getDataRecebimento(): LocalDate&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="257" width="470" x="583" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="45" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Despesa&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− descricao: String&lt;br&gt;− valor: BigDecimal&lt;br&gt;− dataVencimento: LocalDate&lt;br&gt;− tipo: TipoDespesa&lt;br&gt;− quantidadeParcelas: Integer&lt;br&gt;− recorrente: Boolean&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getValor(): BigDecimal&lt;br&gt;+ getTipo(): TipoDespesa&lt;br&gt;+ calcularParcelas(): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="323" width="470" x="3390" y="2111" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;InvestimentoMarketing&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− canal: String&lt;br&gt;− valor: BigDecimal&lt;br&gt;− dataInvestimento: LocalDate&lt;br&gt;− descricao: String&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getCanal(): String&lt;br&gt;+ getValor(): BigDecimal&lt;br&gt;+ getDataInvestimento(): LocalDate&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="281" width="470" x="2820" y="2168" as="geometry" />
+        </mxCell>
+        <mxCell id="47" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Disponibilidade&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− diaSemana: DayOfWeek&lt;br&gt;− horaInicio: LocalTime&lt;br&gt;− horaFim: LocalTime&lt;br&gt;− ativo: Boolean&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getDiaSemana(): DayOfWeek&lt;br&gt;+ getHoraInicio(): LocalTime&lt;br&gt;+ getHoraFim(): LocalTime&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="281" width="470" x="2280" y="2132" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;BloqueioAgenda&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− data: LocalDate&lt;br&gt;− horaInicio: LocalTime&lt;br&gt;− horaFim: LocalTime&lt;br&gt;− motivo: String&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getData(): LocalDate&lt;br&gt;+ getHoraInicio(): LocalTime&lt;br&gt;+ getHoraFim(): LocalTime&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="281" width="470" x="-1000" y="2201" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-128" edge="1" parent="1" source="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeWidth=5;strokeColor=#CC00CC;endArrow=none;endFill=0;" target="50">
+          <mxGeometry relative="1" x="0.005" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-135" connectable="0" parent="46ARqnNvDqwbgi04m70t-128" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.7279" y="2" as="geometry">
+            <mxPoint x="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-136" connectable="0" parent="46ARqnNvDqwbgi04m70t-128" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.8977" y="-1" as="geometry">
+            <mxPoint x="-14" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="49" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Usuario&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− email: String&lt;br&gt;− senhaHash: String&lt;br&gt;− perfil: PerfilUsuario&lt;br&gt;− ativo: Boolean&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getEmail(): String&lt;br&gt;+ getPerfil(): PerfilUsuario&lt;br&gt;+ isAtivo(): Boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="281" width="470" x="1760" y="2168" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;Nutricionista&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− id: Long&lt;br&gt;− nome: String&lt;br&gt;− crn: String&lt;br&gt;− telefone: String&lt;br&gt;− usuario: Usuario&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ getId(): Long&lt;br&gt;+ getNome(): String&lt;br&gt;+ getCrn(): String&lt;br&gt;+ atualizarDados(): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="281" width="470" x="1740" y="2630" as="geometry" />
+        </mxCell>
+        <mxCell id="51" edge="1" parent="1" source="12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000CC;strokeWidth=5;endArrow=block;endFill=1;opacity=55;dashed=1;" target="19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" edge="1" parent="1" source="13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000CC;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;dashed=1;" target="24" value="">
+          <mxGeometry relative="1" x="0.0004" as="geometry" />
+        </mxCell>
+        <mxCell id="55" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="56" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000CC;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57" edge="1" parent="1" source="16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000CC;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="23" value="">
+          <mxGeometry relative="1" x="-0.1131" as="geometry" />
+        </mxCell>
+        <mxCell id="58" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0;entryY=0.75;entryDx=0;entryDy=0;dashed=1;" target="32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="59" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;fillColor=#d5e8d4;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="20" value="">
+          <mxGeometry relative="1" x="0.1274" as="geometry" />
+        </mxCell>
+        <mxCell id="60" edge="1" parent="1" source="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;fillColor=#d5e8d4;entryX=0.75;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61" edge="1" parent="1" source="20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" target="33" value="">
+          <mxGeometry relative="1" x="-0.1249" as="geometry" />
+        </mxCell>
+        <mxCell id="62" edge="1" parent="1" source="21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="64" edge="1" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" edge="1" parent="1" source="23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.991;entryY=0.079;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="68" edge="1" parent="1" source="24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;exitX=0.25;exitY=1;exitDx=0;exitDy=0;dashed=1;" target="38" value="">
+          <mxGeometry relative="1" x="-0.2606" as="geometry">
+            <Array as="points">
+              <mxPoint x="1537.5" y="1510" />
+              <mxPoint x="1400" y="1510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="69" edge="1" parent="1" source="24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="39" value="">
+          <mxGeometry relative="1" x="0.2174" as="geometry">
+            <Array as="points">
+              <mxPoint x="1655" y="1570" />
+              <mxPoint x="1710" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="70" edge="1" parent="1" source="25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="71" edge="1" parent="1" source="26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="39" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="72" edge="1" parent="1" source="27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#00CC00,#576476);strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=-0.007;exitY=0.629;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" target="33" value="">
+          <mxGeometry relative="1" x="-0.0542" as="geometry" />
+        </mxCell>
+        <mxCell id="73" edge="1" parent="1" source="27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;dashed=1;" target="34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74" edge="1" parent="1" source="27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" target="32" value="">
+          <mxGeometry relative="1" x="-0.0185" as="geometry">
+            <mxPoint x="2590" y="1339.999999999999" as="sourcePoint" />
+            <mxPoint x="70" y="1843" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="75" edge="1" parent="1" source="27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="76" edge="1" parent="1" source="28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="38" value="">
+          <mxGeometry relative="1" x="0.0114" as="geometry" />
+        </mxCell>
+        <mxCell id="77" edge="1" parent="1" source="28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="32" value="">
+          <mxGeometry relative="1" x="0.1374" as="geometry">
+            <mxPoint x="320" y="1780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78" edge="1" parent="1" source="29" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;fillColor=#d5e8d4;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="27" value="">
+          <mxGeometry relative="1" x="0.2213" as="geometry" />
+        </mxCell>
+        <mxCell id="79" edge="1" parent="1" source="29" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;fillColor=#d5e8d4;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="23" value="">
+          <mxGeometry relative="1" x="0.0639" as="geometry" />
+        </mxCell>
+        <mxCell id="80" edge="1" parent="1" source="32" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="81" edge="1" parent="1" source="33" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="82" edge="1" parent="1" source="34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="83" edge="1" parent="1" source="35" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="47" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="84" edge="1" parent="1" source="36" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="48" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="85" edge="1" parent="1" source="37" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="86" edge="1" parent="1" source="38" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="87" edge="1" parent="1" source="39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF8000;strokeWidth=5;endArrow=open;endFill=0;opacity=55;dashed=1;" target="49" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="88" edge="1" parent="1" source="43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC00CC;strokeWidth=10;endArrow=none;endFill=0;opacity=55;fillColor=#e1d5e7;" target="42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="89" edge="1" parent="1" source="44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC00CC;strokeWidth=10;endArrow=none;endFill=0;opacity=55;fillColor=#e1d5e7;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="43" value="">
+          <mxGeometry relative="1" x="0.2696" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;ReceitaService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− receitaRepository: ReceitaRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ registrarReceita(consulta: Consulta): Receita&lt;br&gt;+ listarReceitas(): List&amp;lt;Receita&amp;gt;&lt;br&gt;+ calcularTotalMensal(mes: Integer, ano: Integer): BigDecimal&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="173" width="470" x="30" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-92" edge="1" parent="1" source="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="35" value="">
+          <mxGeometry relative="1" x="-0.3603" as="geometry">
+            <Array as="points">
+              <mxPoint x="-535" y="1284" />
+              <mxPoint x="-507.7" y="1284" />
+              <mxPoint x="-507.7" y="1240" />
+              <mxPoint x="-509.1" y="1240" />
+              <mxPoint x="-509.1" y="1230" />
+              <mxPoint x="1122.3" y="1230" />
+              <mxPoint x="1122.3" y="1282.3" />
+              <mxPoint x="2349.8" y="1282.3" />
+              <mxPoint x="2349.8" y="1712" />
+              <mxPoint x="2347.5" y="1712" />
+              <mxPoint x="2347.5" y="1754" />
+            </Array>
+            <mxPoint x="-539.9999999999995" y="1284.0029999999997" as="sourcePoint" />
+            <mxPoint x="2338.44" y="1712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;PacienteService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− pacienteRepository: PacienteRepository&lt;br&gt;− usuarioRepository: UsuarioRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ cadastrarPaciente(paciente: Paciente): Paciente&lt;br&gt;+ buscarPaciente(id: Long): Paciente&lt;br&gt;+ listarPacientes(): List&amp;lt;Paciente&amp;gt;&lt;br&gt;+ atualizarPaciente(id: Long, paciente: Paciente): Paciente&lt;br&gt;+ verificarEmailExistente(email: String): boolean&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="242" width="470" x="1420" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-98" edge="1" parent="1" source="23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00CC00;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;dashed=1;" target="37" value="">
+          <mxGeometry relative="1" x="-0.0829" as="geometry">
+            <Array as="points">
+              <mxPoint x="1212.5" y="1230" />
+              <mxPoint x="2500" y="1230" />
+              <mxPoint x="2500" y="1710" />
+            </Array>
+            <mxPoint x="1150" y="1160" as="sourcePoint" />
+            <mxPoint x="3055" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;RelatorioService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− receitaRepository: ReceitaRepository&lt;br&gt;− despesaRepository: DespesaRepository&lt;br&gt;− consultaRepository: ConsultaRepository&lt;br&gt;− marketingRepository: MarketingRepository&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ gerarRelatorioMensal(mes: Integer, ano: Integer): RelatorioDTO&lt;br&gt;+ calcularSaldoMensal(mes: Integer, ano: Integer): BigDecimal&lt;br&gt;+ calcularMargemLucro(mes: Integer, ano: Integer): BigDecimal&lt;br&gt;+ compararMeses(mes1: Integer, mes2: Integer, ano: Integer): ComparativoDTO&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="260" width="470" x="2590" y="1222" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-99" edge="1" parent="1" source="14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000CC;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1390" y="149" as="sourcePoint" />
+            <mxPoint x="1435" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;MarketingController&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− marketingService: MarketingService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ registrarInvestimento(investimento: InvestimentoMarketing): ResponseEntity&amp;lt;InvestimentoMarketing&amp;gt;&lt;br&gt;+ listarInvestimentos(): ResponseEntity&amp;lt;List&amp;lt;InvestimentoMarketing&amp;gt;&amp;gt;&lt;br&gt;+ consultarCAC(canal: String): ResponseEntity&amp;lt;BigDecimal&amp;gt;&lt;br&gt;+ consultarROI(canal: String): ResponseEntity&amp;lt;BigDecimal&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="197" width="470" x="1110" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-100" edge="1" parent="1" source="15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000CC;strokeWidth=5;endArrow=open;endFill=0;opacity=55;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;dashed=1;" target="20" value="">
+          <mxGeometry relative="1" x="-0.4124" as="geometry">
+            <mxPoint x="2592.5" y="270" as="sourcePoint" />
+            <mxPoint x="140" y="440.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align:center;font-size:18px;font-weight:bold;padding:5px&quot;&gt;PacienteController&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;− pacienteService: PacienteService&lt;/div&gt;&lt;hr style=&quot;border:0;border-top:1px solid #cbd5e1&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;+ cadastrarPaciente(paciente: Paciente): ResponseEntity&amp;lt;Paciente&amp;gt;&lt;br&gt;+ buscarPaciente(id: Long): ResponseEntity&amp;lt;Paciente&amp;gt;&lt;br&gt;+ listarPacientes(): ResponseEntity&amp;lt;List&amp;lt;Paciente&amp;gt;&amp;gt;&lt;br&gt;+ atualizarPaciente(id: Long, paciente: Paciente): ResponseEntity&amp;lt;Paciente&amp;gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="229" width="470" x="550" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-123" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;align=left;verticalAlign=top;spacing=8;overflow=fill;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.35;text-align:left;padding:0 8px&quot;&gt;&lt;div style=&quot;text-align: center; font-size: 18px; padding: 5px;&quot;&gt;GeminiClient&lt;/div&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;&lt;p&gt;- apiKey: String&lt;br&gt;- apiUrl: String&lt;br&gt;- webClient: WebClient&lt;/p&gt;&lt;/div&gt;&lt;hr style=&quot;border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(203, 213, 225) currentcolor currentcolor; border-image: none;&quot;&gt;&lt;div style=&quot;padding:3px 0&quot;&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;+ enviarPrompt(prompt: String): String&lt;/span&gt;&lt;/p&gt;&lt;p&gt;+ gerarAnalise(indicadores: String): String&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="239" width="450" x="3590" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-129" edge="1" parent="1" source="42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.005;entryY=0.439;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;strokeWidth=5;fillColor=#e1d5e7;strokeColor=#CC00CC;endArrow=none;endFill=0;" target="49">
+          <mxGeometry relative="1" x="0.0023" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-130" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1060" y="2340" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-131" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;0..*&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="2340" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-132" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="2260" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-133" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;0..1&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="520" y="2100" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-137" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1600" y="2419" as="geometry" />
+        </mxCell>
+        <mxCell id="46ARqnNvDqwbgi04m70t-138" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="1710" y="2260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
