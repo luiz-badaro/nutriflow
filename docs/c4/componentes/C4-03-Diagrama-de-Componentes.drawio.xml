@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="3qiuxvIgZ68JHKvutSVD">
+    <mxGraphModel dx="2619" dy="2138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="500" width="721" x="39" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p&gt;&lt;strong&gt;Back-End NutriFlow&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Java + Spring Boot — Aplicação de servidor&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="276" x="276" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-8" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-9" connectable="0" parent="HUbKCm3ZugsJ3E9PgABg-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;labelPadding=0 4;fontColor=#000000;" value="&lt;strong&gt;Encaminha requisições&lt;/strong&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0213" y="-1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-40" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;Controllers — API REST&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Java + Spring Boot&lt;/p&gt;&lt;p&gt;Recebe requisições HTTP, valida entradas e encaminha operações aos serviços.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="80" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-10" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-11" connectable="0" parent="HUbKCm3ZugsJ3E9PgABg-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="&lt;strong&gt;Consulta e persiste dados&lt;/strong&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0321" y="-1" as="geometry">
+            <mxPoint x="1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;Services — Regras de Negócio&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Java + Spring Boot&lt;/p&gt;&lt;p&gt;Processa as regras de pacientes, agenda, financeiro, marketing, retenção e relatórios.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="65" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;Repositories — Acesso a Dados&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Spring Data JPA / Hibernate&lt;/p&gt;&lt;p&gt;Realiza operações de consulta, cadastro, atualização e exclusão de dados no MySQL.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="65" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-43" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;IA Service — Integração com Gemini&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Java + Spring Boot / API Gemini&lt;/p&gt;&lt;p&gt;Envia indicadores calculados pelo Back-End à API Gemini e recebe análises e recomendações.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="270" x="460" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;Auth Service — Autenticação e Segurança&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Java + Spring Security&lt;/p&gt;&lt;p&gt;Autentica usuários e controla o acesso às funcionalidades conforme o perfil de nutricionista ou paciente.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-16" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-6">
+          <mxGeometry relative="1" x="-0.1719" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;p&gt;&lt;strong&gt;Solicita análise de indicadores&lt;/strong&gt;&lt;/p&gt;&lt;/div&gt;&lt;h3&gt;&lt;/h3&gt;" vertex="1">
+          <mxGeometry height="30" width="186" x="325" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-22" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;Front-End — Aplicação Web&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;React.js&lt;/p&gt;&lt;p&gt;Interface utilizada por nutricionistas e pacientes para acessar o NutriFlow.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="-360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;strong&gt;Requisições HTTP/REST&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="-121" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-24" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;p&gt;&lt;strong&gt;Banco de Dados — NutriFlow&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;MySQL&lt;/p&gt;&lt;p&gt;Armazena usuários, pacientes, consultas, receitas, despesas e informações de marketing.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="150" width="180" x="96" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;p&gt;&lt;strong&gt;API Gemini — Inteligência Artificial&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Serviço externo — Google&lt;/p&gt;&lt;p&gt;Interpreta indicadores do consultório e retorna análises e recomendações.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="470" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;span&gt;&lt;strong&gt;Solicita operações de autenticação&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;h3&gt;&lt;/h3&gt;" vertex="1">
+          <mxGeometry height="30" width="127" x="324" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#00006B;align=center;verticalAlign=middle;rounded=0;fontColor=#FFFFFF;fontSize=18;" value="&lt;p&gt;&lt;code&gt;C4 – Nível 3: Diagrama de Componentes do NutriFlow&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="508" x="145.5" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p&gt;&lt;strong&gt;Envia indicadores e recebe análises via API HTTPS&lt;/strong&gt;&lt;/p&gt;&lt;h3&gt;&lt;/h3&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="505" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p&gt;&lt;strong&gt;Consulta e persiste dados via JPA/Hibernate&lt;/strong&gt;&lt;/p&gt;&lt;h3&gt;&lt;/h3&gt;" vertex="1">
+          <mxGeometry height="30" width="205" x="60" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="HUbKCm3ZugsJ3E9PgABg-46" edge="1" parent="1" source="HUbKCm3ZugsJ3E9PgABg-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=7.5;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="HUbKCm3ZugsJ3E9PgABg-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
