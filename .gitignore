@@ -21,3 +21,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Banco local de desenvolvimento (H2)
+backend/data/
